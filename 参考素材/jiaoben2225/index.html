@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>jQ带日期区间的日期选择插件 - 站长素材</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <style>
+      footer{
+          display:flex;
+          align-items:center;
+          position:fixed;
+          bottom:0;
+          left:0;
+          width:100vw;
+          height:64px;
+          background-color:white;
+          box-shadow:1px 1px 2px gray;
+      }
+      footer>div{
+          display:flex;
+          width:100%;
+      }
+      footer>div>div:hover{
+          color:red;
+      }
+      footer>div>div{
+          flex:1;
+          text-align: center;
+          display:flex;
+          flex-direction:column;
+      }
+      footer>div>div>svg{
+          height:30px;
+      }
+  </style>
+
+</head>
+
+<body>
+
+<div id='wrapper'>
+  <form>
+    <select class='custom-date' name='select'>
+      <option value='7'>7 Days</option>
+      <option value='30'>30 Days</option>
+      <option selected='selected' value='90'>90 Days</option>
+      <option value='180'>180 Days</option>
+      <option value='365'>365 Days</option>
+      <option value='custom'>Custom</option>
+    </select>
+  </form>
+</div>
+  <script src='js/jquery.js'></script>
+
+  <script src="js/index.js"></script>
+<div style="text-align:center;margin:350px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+
+
+
+
+
+<div>
+  <div style="height:64px;"></div>
+<!--    footer是固定定位，脱离了文档流不占位置，这里使用一个div占下footer的位置，防止内容显示不全-->
+  <footer>
+      <div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                      <path d="M22 11h-4.17l3.24-3.24l-1.41-1.42L15 11h-2V9l4.66-4.66l-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93L6.34 4.34L11 9v2H9L4.34 6.34L2.93 7.76L6.17 11H2v2h4.17l-3.24 3.24l1.41 1.42L9 13h2v2l-4.66 4.66l1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24l1.42-1.41L13 15v-2h2l4.66 4.66l1.41-1.42L17.83 13H22v-2z" fill="currentColor"></path>
+                  </svg>
+                  <span>ゴーン</span>
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                      <path d="M22 11h-4.17l3.24-3.24l-1.41-1.42L15 11h-2V9l4.66-4.66l-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93L6.34 4.34L11 9v2H9L4.34 6.34L2.93 7.76L6.17 11H2v2h4.17l-3.24 3.24l1.41 1.42L9 13h2v2l-4.66 4.66l1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24l1.42-1.41L13 15v-2h2l4.66 4.66l1.41-1.42L17.83 13H22v-2z" fill="currentColor"></path>
+                  </svg>
+                  <span>じんわり</span>
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                      <path d="M22 11h-4.17l3.24-3.24l-1.41-1.42L15 11h-2V9l4.66-4.66l-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93L6.34 4.34L11 9v2H9L4.34 6.34L2.93 7.76L6.17 11H2v2h4.17l-3.24 3.24l1.41 1.42L9 13h2v2l-4.66 4.66l1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24l1.42-1.41L13 15v-2h2l4.66 4.66l1.41-1.42L17.83 13H22v-2z" fill="currentColor"></path>
+                  </svg>
+                  <span>であるマ</span>
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                      <path d="M22 11h-4.17l3.24-3.24l-1.41-1.42L15 11h-2V9l4.66-4.66l-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93L6.34 4.34L11 9v2H9L4.34 6.34L2.93 7.76L6.17 11H2v2h4.17l-3.24 3.24l1.41 1.42L9 13h2v2l-4.66 4.66l1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24l1.42-1.41L13 15v-2h2l4.66 4.66l1.41-1.42L17.83 13H22v-2z" fill="currentColor"></path>
+                  </svg>
+                  <span>おおきに</span>
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                  <path d="M22 11h-4.17l3.24-3.24l-1.41-1.42L15 11h-2V9l4.66-4.66l-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93L6.34 4.34L11 9v2H9L4.34 6.34L2.93 7.76L6.17 11H2v2h4.17l-3.24 3.24l1.41 1.42L9 13h2v2l-4.66 4.66l1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24l1.42-1.41L13 15v-2h2l4.66 4.66l1.41-1.42L17.83 13H22v-2z" fill="currentColor"></path>
+                  </svg>
+                  <span>ギョロッ</span>
+              </div>
+      </div>
+  </footer>
+</div>
+
+</html>

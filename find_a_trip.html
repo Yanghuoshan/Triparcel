@@ -1,0 +1,380 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ParcelTrip</title>
+		<script>
+		document.addEventListener('visibilitychange',function(){
+		if(document.visibilityState=='hidden') {
+		normal_title=document.title;
+		document.title='ParcelTrip';
+		}
+		else
+		document.title=normal_title;
+		});
+		</script>
+
+		<link rel="icon" href="" type="image/x-icon">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+		<!-- All CSS Files Here -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/et-line-fonts.css">
+        <link rel="stylesheet" href="static/css/ionicons.min.css">
+        <link rel="stylesheet" href="static/css/magnific-popup.css">
+        <link rel="stylesheet" href="static/css/meanmenu.css">
+        <link rel="stylesheet" href="static/css/global.css">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/responsive.css">
+        <script src="static/js/modernizr-2.8.3.min.js"></script>
+    </head>
+
+
+	
+	
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+ 		<!-- PRELOADER -->
+		<div class="page-loader">
+			<div class="loader">Loading...</div>
+		</div>
+		<!-- /PRELOADER -->       
+		<!-- header start -->
+		<header id="sticky-header" class="header-fixed header-transparent">
+			<div class="header-area">
+				<div class="container sm-100">
+					<div class="row">
+						<div class="col-md-3 col-sm-2">
+							<div class="logo text-upper">
+								<h4><a href="index.html">ParcelTrip</a></h4>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-10">
+							<div class="menu-area hidden-xs">
+								<nav>
+									<ul class="basic-menu clearfix">
+										<li><a href=""></a></li>
+										<li><a href="about.html"></a></li>
+										<!-- PORTFOLIO -->
+										<li><a href="shenghuo.html">Profile</a></li>
+										<!-- END PORTFOLIO -->
+										<li><a href="rzxx.html">Message</a></li>
+										<li><a href="musicunexistence.html">Setting</a>
+										</li>
+										<li><a href="musicunexistence.html">繁</a>
+										</li>                                           
+										
+									</ul>
+								</nav>							
+							</div>
+
+
+							<!-- basic-mobile-menu by click--> 
+							<div class="basic-mobile-menu visible-xs">
+								<nav id="mobile-nav"><!--js menu-->
+									<ul>
+									
+										<!-- PORTFOLIO -->
+										<li><a href="shenghuo.html">Profile</a></li>
+										<!-- END PORTFOLIO -->
+										<li><a href="rzxx.html">Message</a></li>
+										<li><a href="musicunexistence.html">Setting</a>
+										</li>         
+										<li><a href="musicunexistence.html">繁</a>
+										</li>                                  
+										
+									</ul>
+								</nav>
+							</div>									
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		
+		<div class="basic-space"></div>
+		
+
+
+
+		<!-- basic-slider start -->
+		<div class="basic-breadcrumb-area gray-bg ptb-70">
+			<div class="container">		
+			<ol class="breadcrumb text-xs">
+				<!-- <div class="basic-breadcrumb text-center">
+					<h3 class="">Select trip here</h3> -->
+				<label for="departure">from:&nbsp;&nbsp;  </label>
+				<select name="departure" id="departure">
+				<option value="A">Hong Kong</option>
+				<option value="B">Dublin</option>
+				<option value="C">Cork</option>
+				</select>
+
+				<li><br>				</li>
+				<li>✈</li>
+				<li><br>				</li>
+
+
+				<label for="destination">to:&nbsp;&nbsp;&nbsp;   </label>
+				<select name="destination" id="destination">
+				<option value="B">Dublin</option>
+				<option value="C">Cork</option>
+				</select>
+
+
+
+				<label for="timeformat">time zone:&nbsp;&nbsp;&nbsp;   </label>
+				<select name="destination" id="destination">
+				<option value="B">GMT</option>
+				<option value="C">departure</option>
+				<option value="C">destination</option>
+				</select>
+
+				<div id='wrapper'>
+				    <link rel="stylesheet" href="static/date choose/css/style.css" media="screen" type="text/css" />
+				
+					<form>
+					  <select class='custom-date' name='select'>
+						<option value='1'>Single date</option>
+						<option value='custom'>Range</option>
+					  </select>
+					</form>
+				</div>
+
+				<script src='static/date choose/js/jquery.js'></script>
+				<script src="static/date choose/js/index.js"></script>
+
+
+					
+
+			</ol>
+			</div>
+		</div>
+
+        <div class="row">
+            <style>
+                div>div>img{
+                    border-radius: 50%;
+                    height: 29px;
+                    width: 29px;
+                    margin-bottom:10px;
+                }
+            </style>
+
+
+            <div class="col-md-4 col-sm-6 mb-40">
+                <div class="service-box white-bg">
+                    <div class="filter-menu">
+                        <div class="filter-menu1">
+                        <button class="active" data-filter="*">ALL⚖</button>
+                        <button data-filter=".Emergency">1kg </button>
+                        <button data-filter=".Normal">2kg </button>
+                        <button data-filter=".Normal">3kg+ </button>
+                        <!-- <button data-filter=".graphic">Graphic</button>
+                        <button data-filter=".design">Design </button>
+                        <button data-filter=".video">Video</button> -->
+                        </div>	
+                    </div>	
+                    <div class="filter-menu">
+                        <div class="filter-menu1">
+                        <button class="active" data-filter="*">ALL⭐</button>
+                        <button data-filter=".Emergency">2+ </button>
+                        <button data-filter=".Normal">3+ </button>
+                        <button data-filter=".Normal">4+ </button>
+                        <!-- <button data-filter=".graphic">Graphic</button>
+                        <button data-filter=".design">Design </button>
+                        <button data-filter=".video">Video</button> -->
+                        </div>	
+                    </div>	
+
+
+                    </br></br>
+                    <div>
+                        <img src="image/icon/6.webp">
+                    </div>
+                    <div class="service-content">
+                        <h3>✈&nbsp;&nbsp;LH-7019&nbsp;&&nbsp;LH-978,</br>  🛫 01/02/2024 7:46,  🛬 01/02/2024 17:30</h3>
+                        <p>4.8⭐. Accepted items: all kinds.</br> Maxium weight: 3kg.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-40">
+                <div class="service-box white-bg">
+                    <div>
+                        <img src="image/icon/7.JPG">
+                    </div>
+                    <div class="service-content">
+                        <h3>✈&nbsp;&nbsp;LH-7019&nbsp;&&nbsp;LH-978,</br>  🛫 01/02/2024 7:46,  🛬 01/02/2024 17:30</h3>
+                        <p>4.9⭐. Accepted items: documents, books.</br> Maxium weight: 0.5kg.</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-4 col-sm-6 mb-40">
+                <div class="service-box white-bg">
+                    <div>
+                        <img src="image/icon/8.JPG">
+                    </div>
+                    <div class="service-content">
+                        <h3><a href="details_carrier.html">✈&nbsp;&nbsp;EK-381&nbsp;&&nbsp;EK-686,</br>  🛫 01/02/2024 00:35,  🛬 01/02/2024 11:20</a></h3>
+                        <p>5.0⭐. Accepted items: all kinds.</br> Maxium weight: 1kg.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-40">
+                <div class="service-box white-bg">
+                    <div>
+                        <img src="image/icon/9.JPG">
+                    </div>
+                    <div class="service-content">
+                        <h3>✈&nbsp;&nbsp;CX-219&nbsp;&&nbsp;EI-3323,</br>  🛫 01/02/2024 01:10,  🛬 01/02/2024 10:55</h3>
+                        <p>4.7⭐. Accepted items: all kinds.</br> Maxium weight: 1.5kg.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-40">
+                <div class="service-box white-bg">
+                    <div class="service-icon">
+                        <span class="icon-speedometer"></span>
+                    </div>
+                    <div class="service-content">
+                        
+                        <h3>✈&nbsp;&nbsp;EK-381&nbsp;&&nbsp;EK-686,</br>  🛫 01/02/2024 00:35,  🛬 01/02/2024 11:20</h3>
+                        <p>4.7⭐. Accepted items: all kinds.</br> Maxium weight: 3kg.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-40">
+                <div class="service-box white-bg">
+                    <div class="service-icon">
+                        <span class="icon-chat "></span>
+                    </div>
+                    <div class="service-content">
+                        
+                        <h3>✈CZ7027,  🛫 01/02/2024 7:46,  🛬 01/02/2024 17:30</h3>
+                        <p>4.8⭐. Accepted items: all kinds. Maxium weight: 3kg.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+	</body>
+		<!-- basic-slider end -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+
+
+		
+
+		
+            <!-- All js plugins here -->
+            <script src="static/js/jquery-1.12.0.min.js"></script>
+            <script src="static/js/bootstrap.min.js"></script>
+            <script src="static/js/isotope.pkgd.min.js"></script>
+            <script src="static/js/imagesloaded.pkgd.min.js"></script>
+            <script src="static/js/jquery.magnific-popup.min.js"></script>
+            <script src="static/js/jquery.meanmenu.js"></script>
+            <script src="static/js/plugins.js"></script>
+    
+            </script>		
+            <script src="static/js/main.js"></script>
+    
+    
+    
+            <style>
+                footer{
+                    display:flex;
+                    align-items:center;
+                    position:fixed;
+                    bottom:0;
+                    left:0;
+                    width:104vw;/*xw:%*/
+                    height:64px;
+                    background-color:rgb(45, 247, 254);
+    
+                }
+                footer>div{
+                    display:flex;
+                    width:100%;
+                }
+                footer>div>div:hover{
+                    color:rgb(255, 255, 255);
+                }
+                footer>div>div{
+                    flex:1;
+                    text-align: center;
+                    display:flex;
+                    flex-direction:column;
+                        justify-content: center;
+                        align-items: center;
+                }
+                    footer>div>div>a{
+                        flex:1;
+                        text-align: center;
+                        display:flex;
+                        flex-direction:column;
+                            justify-content: center;
+                            align-items: center;
+                    }
+                footer>div>div>svg{
+                    height:29px;
+                }
+                footer>div>div>img{
+                    height: 29px;
+                    width: 29px;
+                }
+                footer>div>div>a>img{
+                    height: 29px;
+                    width: 29px;
+                }
+            </style>
+    
+            <div>
+                <div>
+                    <a href="Index.html">
+                    <img src="image/icon/1.png">
+                    <span>find an order</span></a>
+                </div>
+                
+                <div>
+                    <a href="start.html">
+                    <img src="image/icon/2.png">
+                    <span>start now</span></a>
+                
+                </div>
+                <div>
+                    <a href="find_a_trip.html">
+                    <img src="image/icon/3.png">
+                    <span><b>find a trip</b></span></a>
+                </div>
+        </div>
+    
+    
+        </footer>
+    
+        </body>
+    </html>
+    

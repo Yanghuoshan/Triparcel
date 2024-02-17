@@ -1,0 +1,27 @@
+footer{
+    display:flex;
+    align-items:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100vw;
+    height:64px;
+    background-color:white;
+    box-shadow:1px 1px 2px gray;
+}
+footer>div{
+    display:flex;
+    width:100%;
+}
+footer>div>div:hover{
+    color:rgb(213, 236, 255);
+}
+footer>div>div{
+    flex:1;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+footer>div>div>svg{
+    height:30px;
+}
