@@ -338,7 +338,7 @@ label {
 
   -moz-user-select: none;
 
-  background: rgb(5, 141, 146); none repeat scroll 0 0;
+  background: rgb(136 221 255); none repeat scroll 0 0;
 
   border: 1px solid transparent;
 
@@ -628,7 +628,7 @@ h1.breadcrumb-2 {
 
 .header-transparent .logo h4 {
 
-  color:rgb(45, 247, 254);
+  color:rgb(60 199 255);
 
 }
 
@@ -3234,11 +3234,11 @@ color: #ffffff;
 
 a#scrollUp {
 
-  background: rgb(5, 141, 146);
+  background: rgb(136 221 255);
 
   bottom: 50px;
 
-  color: rgb(45, 247, 254);
+  color: rgb(255, 255, 255);
 
   height: 40px;
 
