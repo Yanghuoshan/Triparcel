@@ -3412,6 +3412,7 @@ a#scrollUp {
 
 #from2FrameInner{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   /* top: 10px; */
@@ -3433,6 +3434,17 @@ a#scrollUp {
   -webkit-box-shadow: 0px 4px 10px 0 #828282;
   -moz-box-shadow: 0px 4px 10px 0 #828282;
   box-shadow: 0px 4px 10px 0 #828282;
+}
+
+.destination {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.TimeZone {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* css end here */
