@@ -256,14 +256,15 @@ select {
 }
 .drp-popup .drp-calendar-separator:before {
   content: "";
-  position: absolute;
+  position: relative;
   height: 90%;
   border-left: 1px solid #e0e0e0;
-  left: 34px;
+  display: flex;
+  justify-content: center;
 }
 .drp-popup .drp-calendar-separator:after {
   content: "To";
-  position: absolute;
+  position: relative;
   top: 80px;
   color: #2a91ca;
   background-color: white;
@@ -272,6 +273,8 @@ select {
   text-align: center;
   font-size: 16px;
   line-height: 41px;
+  display: flex;
+  justify-content: center;
 }
 .drp-popup .drp-tip {
   position: absolute;
