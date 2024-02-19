@@ -3524,6 +3524,10 @@ a#scrollUp {
   height: 110px;
 }
 
+.release-bottom-item{
+  height: 160px;
+}
+
 .container-details{
   margin: 5px;
   padding: 5px;
@@ -3535,6 +3539,31 @@ a#scrollUp {
   padding: 5px;
   height: 125px;
   width: 100%;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 0;
+  font-size: 10px;
+  color: #d8d8d8;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: rgb(244, 244, 244);
+
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.container-images-item{
+  
+  padding: 5px;
+  height: 125px;
+  width: 125px;
 
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

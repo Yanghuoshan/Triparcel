@@ -33,30 +33,34 @@
         <script src="static/js/modernizr-2.8.3.min.js"></script>
     </head>
 	
+    
+        <header id="sticky-header" class="header-fixed header-transparent">
+			<div class="header-area">
+				<div class="container sm-100">
+					<div class="row-ex">
+						<div class="col-md-3 col-sm-2 wd-40">
+							<div class="logo text-upper">
+								<h4><a href="start.html">←BACK</a></h4>
+							</div>
+						</div>
+						<div class="wd-20"></div>
+						<div class="col-md-3 col-sm-2 wd-40 ReleaseBottom">
 
 
-	<header id="sticky-header" class="header-fixed header-transparent">
-		<div class="header-area">
-			<div class="container sm-100">
-				<div class="row">
-					<div class="col-md-3 col-sm-2">
-						<div class="logo text-upper">
-							<h4><a href="index.html">←back</a></h4>
+							<!-- basic-mobile-menu by click--> 
+							<div class="ReleaseBottomInner">
+								<h4><a href="index.html" class="Release"><b>Release</b></a></h4>
+							</div>									
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-    
-		<!-- header end -->
-    
+		</header>
 	
 	
 	
 	
-	
-		<body>
+	<body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -67,7 +71,7 @@
 			<div class="loader">Loading...</div>
 		</div>
 		<!-- /PRELOADER -->       
-	
+		
 		
 		<!-- basic-breadcrumb start -->
 		<!--<div class="basic-breadcrumb-area gray-bg ptb-70">
@@ -81,24 +85,42 @@
 		<!-- basic-breadcrumb end -->	
 
 		<!-- basic-blo-area -->
-		<div class="basic-blog-area pt-90 pb-20 gray-bg">
-			<div class="container">
+		<div class="releaseWrapper gray-bg ptb-60">
+            <!-- <link rel="stylesheet" href="static/date choose/css/style.css" media="screen" type="text/css" /> -->
+            
+            <div class="releaseFrame release-top">
 				<div class="container-details">
+					<p>Describe the details of your item...</p>
 				</div>
-				<div class="container-images">
+				<div class="container-images-item">
+					<button id="showBtn"><p id="showBtnText"><b> + </b>Add pictures</p></button>
 				</div>
 				<div class="container-location">
+					<img src="image/icon/marker.svg" class="myImage">
+					<p id="location">Kowloon Bay, HK</p>
 				</div>
-			</div>
+                    
+            </div>
 
-            <div class="container">
+            <div class="releaseFrame release-bottom-item">
 				<div class="container-selection">
+					<p id="pricing"><b>Pricing</b></p>
+					<p id="price">$ 0.00 ></p>
 				</div>
-			</div>
-		</div>
+                <div class="container-selection">
+					<p id="AcceptableItems"><b>Acceptable Items</b></p>
+					<p id="AddItems">Item type ></p>
+				</div>
+				<div class="container-selection">
+					<p id="AcceptableItems"><b>Urgency</b></p>
+					<p id="AddItems">Normal ></p>
+				</div>
+            </div>
+            
+        </div>
 		<!-- basic-blog-area end -->
 		
-
+		
 
 		
 		<!-- All js plugins here -->
@@ -111,11 +133,95 @@
         <script src="static/js/plugins.js"></script>
         <script src="static/js/main.js"></script>
 
+
+		<!-- 以下为弹窗代码 -->
 		
-	
+		<div id="popup">
+			
+			<p id="Notice"><b>Permission Use and Privacy Information Notice</b></p>
+			<p style="text-indent:1em;"><b>ParcelTrip</b> APP will use the camera permission to take photos of your tickets and verify your travel information. Do you agree to grant the camera permission? </p>
+			<button id="acceptBtn"><p id="Accept"><b>Confirm privacy terms & Accept</b></p></button>
+			<div class="selectionBar">
+				<button id="hideBtn"><p id="hideBtnText"><b>Cancel</b></p></button>
+			</div>
+		</div>
+
+		<style>
+			#popup {
+				display: none;
+
+				position: fixed;
+				left: 50%;
+				top: -350px;
+				transform: translate(-50%,-50%);
+				height: 200px;
+				width: 400px;
+				padding: 15px;
+				
+				background: #fff;
+				/* 按实际情况 设置z-index */
+
+				z-index: 98;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				position: relative;
+
+				font-size: 10px;
+				color: #444444;
+				background-color: white;
+				
+				border: 1px solid #d6d6d6;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				-webkit-box-shadow: 0px 4px 10px 0 #828282;
+				-moz-box-shadow: 0px 4px 10px 0 #828282;
+				box-shadow: 0px 4px 10px 0 #828282;
+
+			}
+			#showBtnText {
+				transition: all 0.3s ease-out 0s;
+			}
+			#hideBtnText {
+				transition: all 0.3s ease-out 0s;
+				float:right;
+			}
+			
+			#acceptBtn {
+				float: right;
+			}
+			#Accept {
+				float: right;
+				color: rgba(0, 106, 255, 0.905);
+				transition: all 0.3s ease-out 0s;
+			}
+			#hideBtn {
+				float: right;
+			}
+		</style>
+
+		<script>
+			function showPopup() {
+				var popup = document.getElementById('popup');
+				popup.style.display = 'block';
+
+			}
+
+			function hidePopup() {
+				var popup = document.getElementById('popup');
+				popup.style.display = 'none';
+			}
+
+			var showBtn = document.getElementById('showBtn');
+			var hideBtn = document.getElementById('hideBtn');
+			var acceptBtn = document.getElementById('acceptBtn');
+			showBtn.addEventListener('click',showPopup)
+			hideBtn.addEventListener('click',hidePopup)
+			acceptBtn.addEventListener('click',hidePopup)
+
+		</script>
+
 		
-	
-	
-		</footer>
     </body>
 </html>
