@@ -3447,11 +3447,175 @@ a#scrollUp {
   justify-content: space-around;
 }
 
+.releaseFrame {
+  /*top: 10px;*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  font-size: 10px;
+  color: #444444;
+  background-color: white;
+  margin: 15px 15px;
+  padding: 9px 9px 9px;
+  /* text-transform: uppercase; */
+  /* border: 1px solid #d6d6d6; */
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  /* -webkit-box-shadow: 0px 4px 10px 0 #828282;
+  -moz-box-shadow: 0px 4px 10px 0 #828282;
+  box-shadow: 0px 4px 10px 0 #828282; */
+
+}
+
+.ptb-60 {
+  padding: 60px 0;
+}
+
+.ReleaseBottom {
+  float: right;
+}
+
+.wd-40 {
+  width: 40%;
+}
+
+.wd-20 {
+  width: 20%;
+}
+
+.ReleaseBottomInner {
+  /*top: 10px;*/
+  float: right;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  font-size: 10px;
+  color: #444444;
+  background-color: rgb(60 199 255);
+  margin: 16px 0;
+  padding: 9px 12px 0px;
+  text-transform: uppercase;
+  border: 1px solid #d6d6d6;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  /* -webkit-box-shadow: 0px 4px 10px 0 #828282;
+  -moz-box-shadow: 0px 4px 10px 0 #828282;
+  box-shadow: 0px 4px 10px 0 #828282; */
+
+}
+
+.Release {
+  color: white;
+}
+
+.release-top {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+.release-bottom{
+  height: 110px;
+}
+
+.container-details{
+  margin: 5px;
+  padding: 5px;
+  height: 60%;
+}
+
+.container-images{
+  
+  padding: 5px;
+  height: 125px;
+  width: 100%;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 0;
+  font-size: 10px;
+  color: #d8d8d8;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: rgb(244, 244, 244);
+
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-location{
+  
+  padding: 5px;
+  height: 35px;
+
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 0;
+  font-size: 10px;
+  color: #d8d8d8;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: rgb(244, 244, 244);
+  margin-top: 25px;
+  
+  align-self: flex-end;
+  float:left;
+
+}
+
+.container-selection{
+  margin: 5px;
+  padding: 5px;
+  height: 40px;
+}
+
+.myImage {
+  width: 20px;
+  height: 100%;
+  float: left;
+  opacity: 0.5;
+}
+
+#location {
+  float: right;
+}
+
+#pricing {
+  float: left;
+}
+
+#price {
+  float: right;
+}
+
+#AcceptableItems {
+  float: left;
+}
+
+#AddItems {
+  float:right;
+}
+
+.fixed-element {
+  position: absolute;
+  transform: translate3d(0, 0, 0);
+}
+
+
+
 /* css end here */
-
-
-
-
 
 
 
